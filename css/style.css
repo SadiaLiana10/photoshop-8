@@ -1,0 +1,260 @@
+/* common css start */
+:root{
+    --highlight-color:#8484bf;
+    --primary-color: #0f2f44;
+    --light-color:#fefefe;
+    --about-color:#0f2f44;
+    --hover-color:#ffc712;
+    --box-color:#e2e2e2;
+    --hover-background:#fff9e6;
+    --border-color:#dedede;
+    --text-color:#444444;
+    --icon-color:#999999;
+    --heading-font: "Abril Fatface", serif;
+    --secondary-font:"Ubuntu", sans-serif;
+    --body-font:"Open Sans", sans-serif;
+}
+body{
+    font-family: var(--body-font);
+}
+h1,h2{
+    font-family: var(--heading-font);
+}
+h3,h4,h5,h6,a,button{
+    font-family: var(--secondary-font);
+}
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:1170px;
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between; 
+}
+.align-center{
+    align-items:center;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.w-50{
+    width:50%;
+}
+.w-33{
+    width:calc(100% / 3);
+}
+
+
+
+/* common css end */
+
+/* top bar start */
+#top_bar{
+    background-color: var(--primary-color);
+    color:var(--light-color);
+    font-family: var(--secondary-font);
+}
+#top_bar p{
+    line-height: 24px;
+    padding: 13px 0;
+}
+/* top bar end */
+
+/* nav bar start */
+ #nav .menu ul li a{
+    padding:35.5px 19px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    transition: 0.4s;
+    display:inline-block;
+   
+}
+#nav .menu ul li button{
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    color: var(--icon-color);
+    margin-left: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#nav .menu ul li a:hover,#nav .menu ul li button:hover{
+     background-color:var(--hover-background);
+     color:var(--hover-color);
+ }
+/* nav bar end */
+
+/* hero section start */
+#hero{
+    height: 600px;
+ background-position: center;
+ background-size: cover;
+
+}
+#hero .inner_container{
+    width: 40%;
+}
+#hero a{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12.5px 21px;
+    border-radius: 8px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+#hero a:hover{
+    color:var(--highlight-color);
+    background-color: var(--light-color);
+}
+#hero h3{
+    font-size:50px;
+    line-height:70px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+#hero h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+#hero h4{
+    font-size: 32px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--highlight-color);
+    letter-spacing: 17px;
+    margin:16px 0 31px 0;
+    text-transform: capitalize;
+}
+#hero p{
+    font-size: 14px;
+    line-height: 24px;
+    color:var(--text-color);
+}
+#hero .action-btn{
+    margin-top:30px;
+}
+#hero button{
+    width:49px;
+    height:49px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    border: none;
+    color: var(--highlight-color);
+    margin-left:20px ;
+    transition: 0.4s;
+}
+#hero button:hover{
+    color:var(--light-color);
+    background-color: var(--highlight-color);
+} 
+/* hero section end */
+
+/* about us section start */
+#about_us .row{
+    padding:100px 0;
+}
+
+#about_us .inner_container h4{
+    font-weight:300;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+#about_us .inner_container h2{
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+#about_us .inner_container p{
+    color: var(--about-color);
+    line-height: 24px;
+    /* margin:30px 30px; */
+}
+#about_us ul li{
+    color: var(--about-color);
+    margin: 30px 30px;
+}
+#about_us .btn a{
+    background-color: var(--hover-color);
+    color:var(--about-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    display: inline-block;
+    box-shadow: 10px 10px 5px var(--box-color);
+    transition: 0.4s;
+}
+#about_us .btn a:hover{
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+/* about us section end */
+
+#skills .skill-img{
+    width:60%;
+}
+#skills .skill-img img{
+    width:100%;
+}
+
+#skills .icon-img img{
+    margin-top:29px;
+    width:105%;
+}
+#skills .skill-contains{
+    width:40%;
+}
+#skills .skill-contains h3{
+    font-weight:300;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+#skills .skill-contains h1{
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 29px;
+}
+#skills .skill-contains p {
+    color: var(--text-color);
+     line-height: 24px;
+}
+
+
+
+ 
